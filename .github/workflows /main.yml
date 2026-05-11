@@ -1,0 +1,23 @@
+name: Upstream Sync (Stable)
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # 每15分钟检查一次更新
+  workflow_dispatch:      # 允许你在 Actions 页面手动点击运行
+
+jobs:
+  sync_latest_from_upstream:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.repository.fork }}
+
+    steps:
+      - name: Sync with Upstream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 使用 GitHub 官方命令行工具进行同步
+          # 它会自动处理分支对比、拉取和合并，完全不依赖 Node.js 插件
+          gh repo sync $GITHUB_REPOSITORY --branch main --source 5d5d5f5f5f/abc

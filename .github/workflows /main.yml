@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "* * /15 * * *" # 每15分钟检查一次更新
+    - cron: '0 */23 * * *'  # 每23小时自动检查一次
   workflow_dispatch:      # 允许你在 Actions 页面手动点击运行
 
 jobs:

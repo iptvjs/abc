@@ -1,3 +1,5 @@
+## Mumla 语音频道 https://tv1288.xyz/Mumla.html
+支持 Windows / macOS / iPhone / Android
 ## 一键命令 
 docker run -d -p 6001:6001 --name migu2026 qqt8520/migu2026:1.0
 
@@ -17,7 +19,7 @@ qqt8520/migu2026:1.0
 更多频道参考：https://raw.githubusercontent.com/5d5d5f5f5f/10102/refs/heads/main/0623.txt
 ## TXT  免workers部署 ， 小白测试链接： https://2121.ccwu.cc
 ## 聚合搜索 免workers部署 ， 小白测试链接： https://9810.ccwu.cc
-## Mitv 免workers部署 ， 小白测试链接： https://itv.tv1288.xyz
+
 
 ## 夸克网盘免费扩容1TB：https://pan.quark.cn/s/24e7633bbfaf
 ## 临时聊天群：http://45.192.97.170:8103
